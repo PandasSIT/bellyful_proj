@@ -1,0 +1,30 @@
+﻿@model bellyful_proj.Models.MealInstock
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MealInstock</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InstockAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InstockAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MealType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MealType.MealTypeName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MealTypeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,36 @@
+﻿@model bellyful_proj.Models.VolunteerPoliceInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VolunteerPoliceInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceVetDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PoliceVetDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceVetVerified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PoliceVetVerified)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Volunteer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Volunteer.Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VolunteerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

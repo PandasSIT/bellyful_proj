@@ -1,0 +1,49 @@
+﻿@model bellyful_proj.Models.VolunteerTrainingInfo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>VolunteerTrainingInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VolunteerId" />
+            <div class="form-group">
+                <label asp-for="DeliveryTraining" class="control-label"></label>
+                <input asp-for="DeliveryTraining" class="form-control" />
+                <span asp-validation-for="DeliveryTraining" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HSTraining" class="control-label"></label>
+                <input asp-for="HSTraining" class="form-control" />
+                <span asp-validation-for="HSTraining" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstAidRaining" class="control-label"></label>
+                <input asp-for="FirstAidRaining" class="form-control" />
+                <span asp-validation-for="FirstAidRaining" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherTrainingSkill" class="control-label"></label>
+                <input asp-for="OtherTrainingSkill" class="form-control" />
+                <span asp-validation-for="OtherTrainingSkill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

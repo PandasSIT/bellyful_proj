@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-bellyful_proj_v._0._2-ED53B1C6-6BFC-4E29-8F0A-BFBA4A992BFE</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Views\DietaryRequirements\" />
+    <Folder Include="Views\MealInstocks\" />
+    <Folder Include="Views\MealTypes\" />
+    <Folder Include="Views\Recipients\" />
+    <Folder Include="Views\ReferralReasons\" />
+    <Folder Include="Views\ReferrerRoles\" />
+    <Folder Include="Views\Referrers\" />
+  </ItemGroup>
+
+</Project>

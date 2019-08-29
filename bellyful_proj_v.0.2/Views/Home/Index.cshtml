@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+   
+    <div class="col-md-3">
+        <h4>Volunteer</h4>
+
+        <div class="btn-group-vertical">
+            <a class="btn btn-success" asp-controller="VolunteerStatus" asp-action="Index">Volunteer Status</a>
+            <a class="btn btn-success" asp-controller="VolunteerTrainingInfoes" asp-action="Index">Training Information</a>
+            <a class="btn btn-success" asp-controller="VolunteerEmergencyContacts" asp-action="Index">Emergency Contacts</a>
+            <a class="btn btn-success" asp-controller="VolunteerPoliceInfoes" asp-action="Index">Police Information</a>
+            <a class="btn btn-success" asp-controller="VolunteerRoles" asp-action="Index">Volunteer Roles</a>
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <h4>Recipient</h4>
+        <div class="btn-group-vertical">
+            <a class="btn btn-info" asp-controller="ReferralReasons" asp-action="Index">Referral Reason</a>
+            <a class="btn btn-info" asp-controller="Referrers" asp-action="Index">Referrer</a>
+            <a class="btn btn-info" asp-controller="ReferrerRoles" asp-action="Index">Referrer Role</a>
+            <a class="btn btn-info" asp-controller="DietaryRequirements" asp-action="Index">Dietary Requirement</a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <h4>Order</h4>
+        <div class="btn-group-vertical">
+            <a class="btn btn-info" asp-controller="OrderStatus" asp-action="Index">Order Status</a>
+            <a class="btn btn-info" asp-controller="Branches" asp-action="Index">Branches</a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <h4>Meal Stock</h4>
+        <div class="btn-group-vertical">
+            <a class="btn btn-info" asp-controller="MealTypes" asp-action="Index">Meal Type</a>
+            <a class="btn btn-info" asp-controller="Batches" asp-action="Index">Batches</a>
+        </div>
+    </div>
+</div>

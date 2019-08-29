@@ -1,0 +1,39 @@
+﻿@model bellyful_proj.Models.VolunteerPoliceInfo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VolunteerPoliceInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceVetDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PoliceVetDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceVetVerified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PoliceVetVerified)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Volunteer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Volunteer.Address)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="VolunteerId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
